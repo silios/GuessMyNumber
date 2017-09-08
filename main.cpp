@@ -48,7 +48,7 @@ void computerFinder() {
   int guess = rand() % 100 + 1;
   int secretNumber;
   int tries = 0;
-  bool flag=true;
+  //bool flag=true;
 
 
   cout << "Enter a number (1-10000): ";
@@ -67,11 +67,11 @@ void computerFinder() {
       cout << "Too low!\n";
     } else {
       cout << "\nThat's it! computer found your number in " << tries << " guesses!\n";
-      Sleep(1000);
-      tries = 0;
-      countIterations++;
+      //Sleep(1000);
+      //tries = 0;
+      //countIterations++;
     }
-  } while(countIterations < 20);//while(guess != secretNumber);
+  } while(guess != secretNumber); //while(countIterations < 20);
 }
 
 
